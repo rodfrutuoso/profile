@@ -45,6 +45,9 @@ body * {
   max-width: 588px;
   margin: 56px auto 0px;
   padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+  min-height: 90vh;
 }
 
 header {
@@ -159,6 +162,8 @@ ul {
   flex-direction: column;
   gap: 16px;
   padding: 24px 0;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 ul li a {
@@ -203,7 +208,7 @@ ul li a:hover {
 #social-links {
   display: flex;
   justify-content: center;
-  gap: 8px;
+  gap: 15px;
   margin: 0 auto;
   width: fit-content;
   padding: 24px 0;
