@@ -173,6 +173,7 @@ header {
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
+  max-lines: 2;
 }
 
 .icon-container img {
@@ -271,6 +272,7 @@ ul li a:hover {
 .wrapper {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .wrapper .button {
@@ -281,7 +283,7 @@ ul li a:hover {
   float: none;
   text-decoration: none;
   position: relative;
-  margin: 0 5px;
+  margin: 0 1%;
   overflow: hidden;
   background: linear-gradient(
     145deg,
@@ -297,6 +299,26 @@ ul li a:hover {
 
 .wrapper .button:hover {
   width: 200px;
+}
+
+.wrapper .button:nth-child(1):hover {
+  background: #007acc;
+}
+
+.wrapper .button:nth-child(2):hover {
+  background: #6da55f;
+}
+
+.wrapper .button:nth-child(3):hover {
+  background: #e0234e;
+}
+
+.wrapper .button:nth-child(4):hover {
+  background: #1572b6;
+}
+
+.wrapper .button:nth-child(5):hover {
+  background: #007ec6;
 }
 
 .wrapper .button .icon {
@@ -336,13 +358,9 @@ ul li a:hover {
   height: 100%; /* Adapta a altura ao tamanho do contêiner */
   border-radius: 50%; /* Torna a imagem circular */
   object-fit: cover; /* Ajusta a imagem para caber no círculo sem distorção */
-
+  scale: 80%;
   transition: all 0.3s ease-out;
   filter: var(----skill-color);
-}
-
-.wrapper .button:hover .icon img {
-  filter: var(----skill-color-hover);
 }
 
 .wrapper .button span {
@@ -351,28 +369,8 @@ ul li a:hover {
   line-height: normal;
   position: absolute;
   top: 28%;
-  /* transform:  translate(-50%); */
+  color: var(--text-color);
   transition: all 0.3s ease-out;
-}
-
-.wrapper .button:nth-child(1) span {
-  color: #007acc;
-}
-
-.wrapper .button:nth-child(2) span {
-  color: #6da55f;
-}
-
-.wrapper .button:nth-child(3) span {
-  color: #e0234e;
-}
-
-.wrapper .button:nth-child(4) span {
-  color: #1572b6;
-}
-
-.wrapper .button:nth-child(5) span {
-  color: #007ec6;
 }
 
 .wrapper .button:nth-child(1) span {
